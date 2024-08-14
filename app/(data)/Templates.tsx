@@ -279,4 +279,21 @@ export const templates = [
       },
     ],
   },
+  {
+    name: "Generate an insert query with test data",
+    desc: "Generate an insert query with a random data for the provided table structure.",
+    category: "Content",
+    icon: "/logo/insert-record.png",
+    aiPrompt:
+      "Write an insert sql query for the following table structure with dummy data: ",
+    slug: "insert-record",
+    form: [
+      {
+        label: "Enter Table Structure",
+        field: "textarea",
+        name: "tableStructureContent",
+        required: true,
+      },
+    ],
+  },
 ];
